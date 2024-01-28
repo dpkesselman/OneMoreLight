@@ -42,5 +42,11 @@ public class Player : MonoBehaviour
             playerRb2d.AddForce(Vector2.up * 300);
         }
         transform.position = new Vector2(movX, movY);
+
+        // deshabilitar si cae demasiado
+        if (transform.position.y < -5)
+        {
+            gameObject.SetActive(false);
+        }
     }
 }
