@@ -166,6 +166,7 @@ GameObject:
   m_Component:
   - component: {fileID: 56384552}
   - component: {fileID: 56384553}
+  - component: {fileID: 56384554}
   m_Layer: 0
   m_Name: npc-02a
   m_TagString: Untagged
@@ -240,6 +241,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &56384554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56384551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef1ceebb0ffeb8c4abcdf422488b43c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCsad: {fileID: 0}
+  NPChappy: {fileID: 0}
 --- !u!1 &58564453
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,6 +441,7 @@ GameObject:
   - component: {fileID: 108148335}
   - component: {fileID: 108148337}
   - component: {fileID: 108148336}
+  - component: {fileID: 108148338}
   m_Layer: 0
   m_Name: NPC1
   m_TagString: NPC
@@ -461,7 +477,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.25765514, y: 0.023422718}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -472,7 +488,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 5.450425, y: 10.790931}
   m_EdgeRadius: 0
 --- !u!212 &108148337
 SpriteRenderer:
@@ -526,6 +542,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &108148338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108148334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef1ceebb0ffeb8c4abcdf422488b43c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCsad: {fileID: 108148334}
+  NPChappy: {fileID: 1105610966}
 --- !u!1 &198104514
 GameObject:
   m_ObjectHideFlags: 0
@@ -773,8 +803,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tickles: {fileID: 0}
-  mySpriteRenderer: {fileID: 108148337}
-  temp: {fileID: 21300000, guid: 25096ce515c063c48a2bd6b108c95912, type: 3}
 --- !u!82 &214198348
 AudioSource:
   m_ObjectHideFlags: 0
@@ -998,7 +1026,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &387931701
 Transform:
   m_ObjectHideFlags: 0
@@ -2191,7 +2219,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1105610967
 Transform:
   m_ObjectHideFlags: 0
@@ -2240,7 +2268,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1105610966}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -3023,6 +3051,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1814888530}
   - component: {fileID: 1814888531}
+  - component: {fileID: 1814888532}
   m_Layer: 0
   m_Name: npc-03a
   m_TagString: Untagged
@@ -3097,6 +3126,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1814888532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814888529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef1ceebb0ffeb8c4abcdf422488b43c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCsad: {fileID: 0}
+  NPChappy: {fileID: 0}
 --- !u!1 &1835268366
 GameObject:
   m_ObjectHideFlags: 0
@@ -3483,7 +3526,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2098537043
 Transform:
   m_ObjectHideFlags: 0
