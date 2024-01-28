@@ -5,10 +5,13 @@ using UnityEngine;
 public class CollisionController : MonoBehaviour
 {
     public AudioSource tickles;
-
+    public SpriteRenderer mySpriteRenderer;
+    public Sprite temp;
+    
     void Start()
     {
         tickles = GetComponent<AudioSource>();
+        mySpriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -32,6 +35,9 @@ public class CollisionController : MonoBehaviour
     {
         if (collision.gameObject.tag == "NPC")
         {
+            temp = collision.gameObject.GetComponent<SpriteRenderer>().sprite;
+            collision.gameObject.GetComponent<SpriteRenderer>().sprite = mySpriteRenderer.sprite;
+            mySpriteRenderer.sprite = temp;
             Debug.Log("Exit");
         }   
     }
